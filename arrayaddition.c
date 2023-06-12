@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <stdio.h>
-#include <stdlib.h>
 
 int *sumArrays(int arr1[], int arr2[], int size1, int size2, int *size3)
 {
