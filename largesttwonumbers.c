@@ -18,8 +18,12 @@ int main()
             secondlargest = array[idx];
         }
     }
-
-    printf("largest = %d\n", largest);
+    printf("array is: ");
+    for (int idx=0; idx<sizeof(array)/sizeof(int); idx++)
+    {
+        printf("%d ", array[idx]);
+    }
+    printf("\nlargest = %d\n", largest);
     printf("secondlargest = %d\n", secondlargest);
 
 }

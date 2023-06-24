@@ -19,11 +19,12 @@ void deleteExeFilesInParentFolder() {
     while ((entry = readdir(dir)) != NULL) {
         // Check if entry is a regular file
         char filepath[MAX_PATH_LENGTH];
-        snprintf(filepath, sizeof(filepath), "../%s", entry->d_name);
+        snprintf(filepath, sizeof(filepath), "./%s", entry->d_name);
 
         struct stat st;
         if (stat(filepath, &st) == 0 && S_ISREG(st.st_mode)) {
             // Check if file ends with ".exe"
+            printf("got file with .exe extension: %s\n");
             if (strstr(entry->d_name, ".exe") != NULL) {
                 // Delete the file
                 if (remove(filepath) == 0) {
