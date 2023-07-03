@@ -35,7 +35,6 @@ void printMatrix(int **matrix, int cols, int rows)
         printf("|");
         for (int idx2 = 0; idx2 < cols; idx2++)
         {
-            // printf("\nelement at index [%d][%d] is %d ", idx, idx2, matrix[idx][idx2]);
             printf("%d ", matrix[idx][idx2]);
         }
         printf("|\n");

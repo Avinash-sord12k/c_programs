@@ -55,8 +55,8 @@ int main()
     int textActualLength = strlen(text);
 
     char *reversedText = reverseCharArray(text, textActualLength);
-    printCharArray(text, textActualLength, "\nBefore reversing");
-    printCharArray(reversedText, textActualLength, "\nAfter reversing");
+    printCharArray(text, textActualLengths  , "\nBefore reversing");
+    printCharArray(reversedText, textActualLengths  , "\nAfter reversing");
     free(reversedText);
     return 0;
 }

@@ -45,10 +45,16 @@ void str_reverse(char string[]) {
 
 int main()
 {   
-    char input_string[100];
+    char input_string[5];
 
     printf("enter the string: ");
     gets(input_string);
+
+    int index = 0;
+    while (input_string[index] != '\0') {
+        printf("%d, %c\n", index, input_string[index]);
+        index++;
+    }
 
     str_length(input_string);
     str_search(input_string, 'a');
